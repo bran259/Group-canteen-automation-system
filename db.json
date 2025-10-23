@@ -1,55 +1,138 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Admin User",
       "email": "admin@canteen.com",
       "password": "admin123",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Elvin",
       "email": "elvin@student.com",
       "password": "elvin123",
       "role": "customer"
+    },
+    {
+      "id": "e1fb",
+      "name": "brian",
+      "email": "bran@gmail.com",
+      "password": "1234567",
+      "role": "user"
     }
   ],
-
   "menu": [
-    { "id": 1, "name": "Burger", "price": 60, "quantity": 30, "category": "Snacks", "description": "Fresh beef burger with lettuce and cheese" },
-    { "id": 2, "name": "Fries", "price": 40, "quantity": 50, "category": "Snacks", "description": "Crispy golden fries" },
-    { "id": 3, "name": "Pasta", "price": 80, "quantity": 20, "category": "Main Course", "description": "Creamy Alfredo pasta" },
-    { "id": 4, "name": "Pizza Slice", "price": 90, "quantity": 25, "category": "Main Course", "description": "Cheesy Margherita slice" },
-    { "id": 5, "name": "Iced Coffee", "price": 50, "quantity": 40, "category": "Drinks", "description": "Cold brew with milk and ice" },
-    { "id": 6, "name": "Soft Drink", "price": 30, "quantity": 100, "category": "Drinks", "description": "Refreshing cola or lemon soda" }
+    {
+      "id": "1",
+      "name": "Burger",
+      "price": 60,
+      "quantity": 30,
+      "category": "Snacks",
+      "description": "Fresh beef burger with lettuce and cheese"
+    },
+    {
+      "id": "2",
+      "name": "Fries",
+      "price": 40,
+      "quantity": 50,
+      "category": "Snacks",
+      "description": "Crispy golden fries"
+    },
+    {
+      "id": "3",
+      "name": "Pasta",
+      "price": 80,
+      "quantity": 20,
+      "category": "Main Course",
+      "description": "Creamy Alfredo pasta"
+    },
+    {
+      "id": "4",
+      "name": "Pizza Slice",
+      "price": 90,
+      "quantity": 25,
+      "category": "Main Course",
+      "description": "Cheesy Margherita slice"
+    },
+    {
+      "id": "5",
+      "name": "Iced Coffee",
+      "price": 50,
+      "quantity": 40,
+      "category": "Drinks",
+      "description": "Cold brew with milk and ice"
+    },
+    {
+      "id": "6",
+      "name": "Soft Drink",
+      "price": 30,
+      "quantity": 100,
+      "category": "Drinks",
+      "description": "Refreshing cola or lemon soda"
+    }
   ],
-
   "orders": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 2,
       "date": "2025-10-23",
       "status": "Delivered",
       "totalAmount": 130
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 2,
       "date": "2025-10-23",
       "status": "Pending",
       "totalAmount": 90
+    },
+    {
+      "id": "886e",
+      "userId": "e1fb",
+      "date": "2025-10-23T13:00:43.088Z",
+      "status": "Pending",
+      "totalAmount": 30
     }
   ],
-
   "orderDetails": [
-    { "id": 1, "orderId": 1, "itemId": 1, "quantity": 1 },
-    { "id": 2, "orderId": 1, "itemId": 2, "quantity": 1 },
-    { "id": 3, "orderId": 2, "itemId": 4, "quantity": 1 }
+    {
+      "id": "1",
+      "orderId": 1,
+      "itemId": 1,
+      "quantity": 1
+    },
+    {
+      "id": "2",
+      "orderId": 1,
+      "itemId": 2,
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "orderId": 2,
+      "itemId": 4,
+      "quantity": 1
+    },
+    {
+      "id": "e6e7",
+      "orderId": "886e",
+      "itemId": "6",
+      "quantity": 1
+    }
   ],
-
   "payments": [
-    { "id": 1, "orderId": 1, "mode": "Cash", "status": "Paid" },
-    { "id": 2, "orderId": 2, "mode": "Online", "status": "Pending" }
+    {
+      "id": "1",
+      "orderId": 1,
+      "mode": "Cash",
+      "status": "Paid"
+    },
+    {
+      "id": "2",
+      "orderId": 2,
+      "mode": "Online",
+      "status": "Pending"
+    }
   ]
 }
