@@ -20,6 +20,13 @@
       "email": "bran@gmail.com",
       "password": "1234567",
       "role": "user"
+    },
+    {
+      "id": "1f4a",
+      "name": "brian",
+      "email": "bran@gmail.com",
+      "password": "10928374",
+      "role": "admin"
     }
   ],
   "menu": [
@@ -29,7 +36,8 @@
       "price": 60,
       "quantity": 30,
       "category": "Snacks",
-      "description": "Fresh beef burger with lettuce and cheese"
+      "description": "Fresh beef burger with lettuce and cheese",
+      "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1469"
     },
     {
       "id": "2",
@@ -37,7 +45,8 @@
       "price": 40,
       "quantity": 50,
       "category": "Snacks",
-      "description": "Crispy golden fries"
+      "description": "Crispy golden fries",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/027/536/411/small/delicious-french-fries-on-a-white-background-photo.jpg"
     },
     {
       "id": "3",
@@ -45,7 +54,8 @@
       "price": 80,
       "quantity": 20,
       "category": "Main Course",
-      "description": "Creamy Alfredo pasta"
+      "description": "Creamy Alfredo pasta",
+      "image": "https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?semt=ais_hybrid&w=740&q=80"
     },
     {
       "id": "4",
@@ -53,7 +63,8 @@
       "price": 90,
       "quantity": 25,
       "category": "Main Course",
-      "description": "Cheesy Margherita slice"
+      "description": "Cheesy Margherita slice",
+      "image": "https://t4.ftcdn.net/jpg/09/88/11/13/360_F_988111369_PxMp15vF2BC4whQx9K5iZfAfofCABgAR.jpg"
     },
     {
       "id": "5",
@@ -61,7 +72,8 @@
       "price": 50,
       "quantity": 40,
       "category": "Drinks",
-      "description": "Cold brew with milk and ice"
+      "description": "Cold brew with milk and ice",
+      "image": "https://realfood.tesco.com/media/images/RFO-1400x919-IcedCoffee-76221116-2565-4103-9899-89571028018e-0-1400x919.jpg"
     },
     {
       "id": "6",
@@ -69,7 +81,17 @@
       "price": 30,
       "quantity": 100,
       "category": "Drinks",
-      "description": "Refreshing cola or lemon soda"
+      "description": "Refreshing cola or lemon soda",
+      "image": "https://media.istockphoto.com/id/504754220/photo/cocktails.jpg?s=612x612&w=0&k=20&c=NxIzGT-LbUS0BAPoCMDY3mEp96AnIxxldbWmFMeeD-A="
+    },
+    {
+      "id": "7",
+      "name": "Bevarages",
+      "price": 30,
+      "quantity": 100,
+      "category": "Drinks",
+      "description": "Refreshing cofee or Tea",
+      "image": "https://media.istockphoto.com/id/1371317396/photo/assortment-of-hard-strong-alcoholic-drinks-and-spirits.jpg?s=612x612&w=0&k=20&c=nH5UFeng_BwbrXrnULOSNQxF2vCKEk8V42AKOST4shY="
     }
   ],
   "orders": [
@@ -93,6 +115,27 @@
       "date": "2025-10-23T13:00:43.088Z",
       "status": "Pending",
       "totalAmount": 30
+    },
+    {
+      "id": "a84f",
+      "userId": "e1fb",
+      "date": "2025-10-23T14:16:07.197Z",
+      "status": "Pending",
+      "totalAmount": 30
+    },
+    {
+      "id": "7c5e",
+      "userId": "1f4a",
+      "date": "2025-10-23T18:33:03.792Z",
+      "status": "Pending",
+      "totalAmount": 60
+    },
+    {
+      "id": "92e7",
+      "userId": "e1fb",
+      "date": "2025-10-23T20:41:52.484Z",
+      "status": "Pending",
+      "totalAmount": 90
     }
   ],
   "orderDetails": [
@@ -118,6 +161,24 @@
       "id": "e6e7",
       "orderId": "886e",
       "itemId": "6",
+      "quantity": 1
+    },
+    {
+      "id": "5825",
+      "orderId": "a84f",
+      "itemId": "6",
+      "quantity": 1
+    },
+    {
+      "id": "f478",
+      "orderId": "7c5e",
+      "itemId": "1",
+      "quantity": 1
+    },
+    {
+      "id": "b6c4",
+      "orderId": "92e7",
+      "itemId": "4",
       "quantity": 1
     }
   ],
