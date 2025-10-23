@@ -1,35 +1,58 @@
 import React from "react";
-import api from "../services/api";
 
 export default function Cart({ cart, setCart }) {
-  const total = cart.reduce((sum, i) => sum + i.price * i.quantity, 0);
+  const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const placeOrder = async () => {
-    if (cart.length === 0) return alert("Cart is empty");
-    const payload = {
-      items: cart.map((c) => ({ itemId: c.id, quantity: c.quantity })),
+    if (cart.length === 0) return alert("Cart is empty!");
+    const user = JSON.parse(localStorage.getItem("user") || "null");
+    if (!user) return alert("Please login first!");
+
+    const order = {
+      userId: user.id,
+      date: new Date().toISOString(),
+      status: "Pending",
+      totalAmount: total,
     };
-    try {
-      const res = await api.post("/orders", payload);
-      alert("Order placed successfully! Order ID: " + res.data.orderId);
-      setCart([]);
-    } catch (err) {
-      alert("Error: " + err.response.data.message);
+
+    const res = await fetch("http://localhost:4000/orders", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(order),
+    });
+    const orderData = await res.json();
+
+    for (const item of cart) {
+      await fetch("http://localhost:4000/orderDetails", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          orderId: orderData.id,
+          itemId: item.id,
+          quantity: item.quantity,
+        }),
+      });
+
+      await fetch(`http://localhost:4000/menu/${item.id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ quantity: item.quantity - 1 }),
+      });
     }
+
+    alert("Order placed!");
+    setCart([]);
   };
 
   return (
-    <div className="fixed bottom-6 right-6 bg-white border p-4 rounded-lg shadow-lg w-72">
-      <h3 className="font-bold mb-2"> Cart</h3>
+    <div className="fixed bottom-6 right-6 bg-white border p-4 rounded shadow w-72">
+      <h3 className="font-bold mb-2">🛍️ Cart</h3>
       {cart.length === 0 ? (
-        <p>Cart is empty</p>
+        <p>No items</p>
       ) : (
         <>
           {cart.map((item) => (
-            <div
-              key={item.id}
-              className="flex justify-between items-center border-b py-1"
-            >
+            <div key={item.id} className="flex justify-between border-b py-1">
               <span>
                 {item.name} x {item.quantity}
               </span>
@@ -37,10 +60,7 @@ export default function Cart({ cart, setCart }) {
             </div>
           ))}
           <div className="font-bold mt-2">Total: ₱{total}</div>
-          <button
-            onClick={placeOrder}
-            className="mt-2 w-full bg-green-600 text-white py-1 rounded"
-          >
+          <button onClick={placeOrder} className="mt-2 w-full bg-green-600 text-white py-1 rounded">
             Place Order
           </button>
         </>
