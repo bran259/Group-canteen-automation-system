@@ -15,7 +15,7 @@ export default function Carts({ cart, setCart }) {
       totalAmount: total,
     };
 
-    const res = await fetch("http://localhost:3000/orders", {
+    const res = await fetch("https://json-server-vercel-21sz.vercel.app/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(order),
@@ -23,7 +23,7 @@ export default function Carts({ cart, setCart }) {
     const orderData = await res.json();
 
     for (const item of cart) {
-      await fetch("http://localhost:3000/orderDetails", {
+      await fetch("https://json-server-vercel-21sz.vercel.app/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

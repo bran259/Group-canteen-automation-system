@@ -5,7 +5,7 @@ export default function Orders() {
   const user = JSON.parse(localStorage.getItem("user") || "null");
 
   useEffect(() => {
-    fetch("http://localhost:3000/orders")
+    fetch("https://json-server-vercel-21sz.vercel.app/")
       .then((res) => res.json())
       .then((data) => {
         const userOrders = data.filter((o) => o.userId === user?.id);

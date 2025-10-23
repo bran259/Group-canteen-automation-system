@@ -9,7 +9,7 @@ export default function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const res = await fetch("http://localhost:3000/users");
+    const res = await fetch("https://json-server-vercel-21sz.vercel.app/");
     const users = await res.json();
     const user = users.find(
       (u) => u.email === email && u.password === password
