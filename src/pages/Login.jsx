@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import api from "../services/api";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -10,37 +9,42 @@ export default function Login() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    try {
-      const res = await api.post("/auth/login", { email, password });
-      localStorage.setItem("token", res.data.token);
+    const res = await fetch("http://localhost:4000/users");
+    const users = await res.json();
+    const user = users.find(
+      (u) => u.email === email && u.password === password
+    );
+
+    if (user) {
+      localStorage.setItem("user", JSON.stringify(user));
       alert("Login successful!");
       navigate("/");
-    } catch {
-      alert("Invalid credentials");
+    } else {
+      alert("Invalid email or password!");
     }
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
-      <form
-        onSubmit={handleLogin}
-        className="bg-white p-8 rounded-lg shadow-lg w-96"
-      >
-        <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
+    <div className="max-w-md mx-auto mt-10 bg-white p-6 rounded shadow">
+      <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
+      <form onSubmit={handleLogin}>
         <input
-          className="border w-full p-2 mb-3 rounded"
+          type="email"
           placeholder="Email"
+          className="w-full border p-2 mb-3 rounded"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
         <input
           type="password"
-          className="border w-full p-2 mb-3 rounded"
           placeholder="Password"
+          className="w-full border p-2 mb-3 rounded"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
-        <button className="w-full bg-blue-600 text-white py-2 rounded">
+        <button className="bg-blue-600 text-white w-full py-2 rounded">
           Login
         </button>
       </form>
