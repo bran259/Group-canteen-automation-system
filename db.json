@@ -33,7 +33,7 @@
     {
       "id": "1",
       "name": "Burger",
-      "price": 60,
+      "price": 350,
       "quantity": 30,
       "category": "Snacks",
       "description": "Fresh beef burger with lettuce and cheese",
@@ -42,7 +42,7 @@
     {
       "id": "2",
       "name": "Fries",
-      "price": 40,
+      "price": 200,
       "quantity": 50,
       "category": "Snacks",
       "description": "Crispy golden fries",
@@ -51,7 +51,7 @@
     {
       "id": "3",
       "name": "Pasta",
-      "price": 80,
+      "price": 800,
       "quantity": 20,
       "category": "Main Course",
       "description": "Creamy Alfredo pasta",
@@ -60,7 +60,7 @@
     {
       "id": "4",
       "name": "Pizza Slice",
-      "price": 90,
+      "price": 320,
       "quantity": 25,
       "category": "Main Course",
       "description": "Cheesy Margherita slice",
@@ -69,7 +69,7 @@
     {
       "id": "5",
       "name": "Iced Coffee",
-      "price": 50,
+      "price": 400,
       "quantity": 40,
       "category": "Drinks",
       "description": "Cold brew with milk and ice",
@@ -79,7 +79,7 @@
       "id": "6",
       "name": "Soft Drink",
       "price": 30,
-      "quantity": 100,
+      "quantity": 230,
       "category": "Drinks",
       "description": "Refreshing cola or lemon soda",
       "image": "https://media.istockphoto.com/id/504754220/photo/cocktails.jpg?s=612x612&w=0&k=20&c=NxIzGT-LbUS0BAPoCMDY3mEp96AnIxxldbWmFMeeD-A="
@@ -87,7 +87,16 @@
     {
       "id": "7",
       "name": "Bevarages",
-      "price": 30,
+      "price": 120,
+      "quantity": 100,
+      "category": "Drinks",
+      "description": "Refreshing cofee or Tea",
+      "image": "https://media.istockphoto.com/id/1371317396/photo/assortment-of-hard-strong-alcoholic-drinks-and-spirits.jpg?s=612x612&w=0&k=20&c=nH5UFeng_BwbrXrnULOSNQxF2vCKEk8V42AKOST4shY="
+    },
+    {
+      "id": "8",
+      "name": "Bevarages",
+      "price": 120,
       "quantity": 100,
       "category": "Drinks",
       "description": "Refreshing cofee or Tea",
