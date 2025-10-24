@@ -7,7 +7,7 @@ export default function Menu() {
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    fetch("https://json-server-vercel-21sz.vercel.app/")
+    fetch("https://json-server-vercel-21sz.vercel.app/menu")
       .then((res) => res.json())
       .then((data) => {
         // Ensure each item has a quantity field for cart logic

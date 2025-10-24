@@ -9,7 +9,7 @@ export default function AdminPanel() {
   });
 
   useEffect(() => {
-    fetch("https://json-server-vercel-21sz.vercel.app/")
+    fetch("https://json-server-vercel-21sz.vercel.app/orders")
       .then((res) => res.json())
       .then((data) => setMenu(data));
   }, []);
@@ -17,7 +17,7 @@ export default function AdminPanel() {
   const handleAddItem = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://json-server-vercel-21sz.vercel.app/", {
+    const res = await fetch("https://json-server-vercel-21sz.vercel.app/menu", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newItem),
@@ -29,7 +29,7 @@ export default function AdminPanel() {
   };
 
   const deleteItem = async (id) => {
-    await fetch`(https://json-server-vercel-21sz.vercel.app//${id}, { method: "DELETE" });`
+    await fetch`(https://json-server-vercel-21sz.vercel.app/menu/${id}, { method: "DELETE" });`
     setMenu(menu.filter((item) => item.id !== id));
   };
 

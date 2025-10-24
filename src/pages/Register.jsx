@@ -13,7 +13,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://json-server-vercel-21sz.vercel.app/", {
+    const res = await fetch("https://json-server-vercel-21sz.vercel.app/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
