@@ -7,13 +7,14 @@ export default function AdminPanel() {
     description: "",
     price: "",
   });
-
+//load menu
   useEffect(() => {
-    fetch("https://json-server-vercel-21sz.vercel.app/orders")
+    fetch("https://json-server-vercel-21sz.vercel.app/menu")
       .then((res) => res.json())
       .then((data) => setMenu(data));
   }, []);
 
+//Add new item
   const handleAddItem = async (e) => {
     e.preventDefault();
 
@@ -27,7 +28,7 @@ export default function AdminPanel() {
     setMenu([...menu, data]);
     setNewItem({ name: "", description: "", price: "" });
   };
-
+//delete items
   const deleteItem = async (id) => {
     await fetch`(https://json-server-vercel-21sz.vercel.app/menu/${id}, { method: "DELETE" });`
     setMenu(menu.filter((item) => item.id !== id));
