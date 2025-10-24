@@ -1,5 +1,5 @@
 import React from "react";
-
+//calculate total
 export default function Carts({ cart, setCart }) {
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
@@ -7,7 +7,7 @@ export default function Carts({ cart, setCart }) {
     if (cart.length === 0) return alert("Cart is empty!");
     const user = JSON.parse(localStorage.getItem("user") || "null");
     if (!user) return alert("Please login first!");
-
+   //create new order
     const order = {
       userId: user.id,
       date: new Date().toISOString(),
@@ -22,6 +22,7 @@ export default function Carts({ cart, setCart }) {
     });
     const orderData = await res.json();
 
+  //Add order details for each cart items
     for (const item of cart) {
       await fetch("https://json-server-vercel-21sz.vercel.app/orders", {
         method: "POST",

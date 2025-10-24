@@ -7,6 +7,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  //login form submission
   const handleLogin = async (e) => {
     e.preventDefault();
     const res = await fetch("https://json-server-vercel-21sz.vercel.app/users/");
@@ -18,7 +19,7 @@ export default function Login() {
     if (user) {
       localStorage.setItem("user", JSON.stringify(user));
       alert("Login successful!");
-      navigate("/");
+      navigate("/");//redirect to man page
     } else {
       alert("Invalid email or password!");
     }

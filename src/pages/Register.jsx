@@ -8,11 +8,12 @@ export default function Register() {
     password: "",
     role: "user",
   });
+  //hooks after succesfull registration
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  //create new user
     const res = await fetch("https://json-server-vercel-21sz.vercel.app/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

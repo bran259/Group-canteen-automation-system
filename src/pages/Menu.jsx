@@ -16,7 +16,8 @@ export default function Menu() {
       })
       .catch((err) => console.error("Error loading menu:", err));
   }, []);
-
+  
+   //Add items to cart
   const addToCart = (item) => {
     setCart((prev) => {
       const existing = prev.find((p) => p.id === item.id);
@@ -28,7 +29,7 @@ export default function Menu() {
       return [...prev, { ...item, quantity: 1 }];
     });
   };
-
+ //render the UI
   return (
     <div className="p-4">
       <h1 className="text-3xl font-bold mb-4">🍔 Menu</h1>
