@@ -15,24 +15,31 @@
       "role": "customer"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "bran",
       "email": "bran@gmail.com",
       "password": "1234567",
       "role": "customer"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "dorine",
       "email": "dorine@gmail.com",
       "password": "qwerty",
       "role": "customer"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "elvin",
       "email": "elvin@gmail.com",
       "password": "zxcvb",
+      "role": "customer"
+    },
+    {
+      "id": 3,
+      "name": "allan",
+      "email": "allan@gmail.com",
+      "password": "pe1234",
       "role": "customer"
     }
   ],
@@ -86,7 +93,7 @@
       "stock": 198
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Burger",
       "price": 125,
       "category": "Breakfast",
@@ -160,7 +167,7 @@
       "date": "2025-10-29T10:30:00.000Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 3,
       "items": [
         {
@@ -176,7 +183,7 @@
       "date": "2025-10-29T12:29:37.929Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 3,
       "items": [
         {
@@ -192,7 +199,7 @@
       "date": "2025-10-29T12:30:36.656Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 4,
       "items": [
         {
@@ -238,7 +245,7 @@
       "date": "2025-10-29T18:17:57.510Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 5,
       "items": [
         {
@@ -281,28 +288,28 @@
       "status": "confirmed"
     },
     {
-      "id": 2,
+      "id": "2",
       "orderId": 2,
       "amount": 20,
       "mode": "cash",
       "status": "confirmed"
     },
     {
-      "id": 3,
+      "id": "3",
       "orderId": 3,
       "amount": 240,
       "mode": "online",
       "status": "confirmed"
     },
     {
-      "id": 4,
+      "id": "4",
       "orderId": 4,
       "amount": 470,
       "mode": "cash",
       "status": "confirmed"
     },
     {
-      "id": 5,
+      "id": "5",
       "orderId": 5,
       "amount": 1360,
       "mode": "online",
