@@ -20,6 +20,20 @@
       "email": "bran@gmail.com",
       "password": "1234567",
       "role": "customer"
+    },
+    {
+      "id": 4,
+      "name": "dorine",
+      "email": "dorine@gmail.com",
+      "password": "qwerty",
+      "role": "customer"
+    },
+    {
+      "id": 5,
+      "name": "elvin",
+      "email": "elvin@gmail.com",
+      "password": "zxcvb",
+      "role": "customer"
     }
   ],
   "menu": [
@@ -28,15 +42,15 @@
       "name": "Chapati",
       "price": 25,
       "category": "Breakfast",
-      "image": "/images/chapati.jpg",
-      "stock": 99
+      "image": "https://images.unsplash.com/photo-1708782343717-be4ea260249a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hhcGF0aXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
+      "stock": 98
     },
     {
       "id": "2",
       "name": "Rice & Beans",
       "price": 80,
       "category": "Lunch",
-      "image": "/images/rice_beans.jpg",
+      "image": "https://media.istockphoto.com/id/491515682/photo/rice-and-beans.webp?s=2048x2048&w=is&k=20&c=wdioyhpfp7a4Gao_KycheRAWoAfS8Vcs7n8YNdCjEdA=",
       "stock": 55
     },
     {
@@ -44,32 +58,32 @@
       "name": "Ugali & Fish",
       "price": 120,
       "category": "Lunch",
-      "image": "/images/ugali_fish.jpg",
-      "stock": 30
+      "image": "https://media.istockphoto.com/id/2240226620/photo/banku-smooth-fermented-corn-and-cassava-dough-served-with-grilled-tilapia-and-pepper-sauce.webp?s=2048x2048&w=is&k=20&c=V7QkrYDS77CC4GgpV0ScEX1Sm88lelffWaqqxJ9F8ro=",
+      "stock": 29
     },
     {
       "id": "4",
       "name": "Mandazi",
       "price": 15,
       "category": "Breakfast",
-      "image": "/images/mandazi.jpg",
-      "stock": 80
+      "image": "https://media.istockphoto.com/id/1635108776/photo/odading-or-galundeng-is-a-traditional-sweet-made-from-flour-and-sugar-and-process-in-deep.webp?s=2048x2048&w=is&k=20&c=CVRqIN-6MK07XIJpR1YiNPBXQGw2jy_Mo4RN-qdyDWk=",
+      "stock": 79
     },
     {
       "id": "5",
       "name": "Chicken Stew",
       "price": 150,
       "category": "Dinner",
-      "image": "/images/chicken.jpg",
-      "stock": 25
+      "image": "https://images.unsplash.com/photo-1708782344490-9026aaa5eec7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880",
+      "stock": 23
     },
     {
       "id": "6",
       "name": "Tea",
       "price": 10,
       "category": "Beverage",
-      "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1469",
-      "stock": 200
+      "image": "https://images.unsplash.com/photo-1745494807489-da4780745194?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687",
+      "stock": 198
     },
     {
       "id": 7,
@@ -77,23 +91,23 @@
       "price": 125,
       "category": "Breakfast",
       "stock": 34,
-      "image": "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1469"
+      "image": "https://media.istockphoto.com/id/467416670/photo/huge-grass-fed-bison-hamburger-with-chips-beer.webp?s=2048x2048&w=is&k=20&c=2lQhuYKuABeKPU1W1faKAQIcBtBFB7Ln1VKBKQUFpMc="
     },
     {
       "id": "8",
       "name": "Fries",
       "price": 200,
       "category": "Snacks",
-      "stock": 60,
-      "image": "https://static.vecteezy.com/system/resources/thumbnails/027/536/411/small/delicious-french-fries-on-a-white-background-photo.jpg"
+      "stock": 58,
+      "image": "https://media.istockphoto.com/id/1031570852/photo/crispy-potato-waffles-fries-with-ketchup-on-white-wooden-board.webp?s=2048x2048&w=is&k=20&c=Kdy4qs5WG9XJ5a8o_kGQGr8gqcxsEvMNJUTnHINqhps="
     },
     {
       "id": "9",
       "name": "Pasta",
       "price": 800,
       "category": "Main Course",
-      "stock": 60,
-      "image": "https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?semt=ais_hybrid&w=740&q=80"
+      "stock": 59,
+      "image": "https://media.istockphoto.com/id/2190261791/photo/classic-italian-pasta-penne-alla-arrabiata-with-basil-and-freshly-grated-parmesan-cheese-on.webp?s=2048x2048&w=is&k=20&c=b4zdOKy_4zuDPr7GLSieETYa8BMR053swEtp5_Cnpp8="
     },
     {
       "id": "10",
@@ -101,7 +115,7 @@
       "price": 320,
       "category": "Main Course",
       "stock": 66,
-      "image": "https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?semt=ais_hybrid&w=740&q=80"
+      "image": "https://media.istockphoto.com/id/2156049905/photo/four-different-types-of-pizza-arranged-in-the-form-of-pizza.webp?s=2048x2048&w=is&k=20&c=ZjJNBWIxI0oc0TMY_eNMY5U5ajTLOb6U4EeggofMXK4="
     },
     {
       "id": "11",
@@ -117,17 +131,16 @@
       "price": 28,
       "category": "Drinks",
       "stock": 20,
-      "image": "https://media.istockphoto.com/id/1371317396/photo/assortment-of-hard-strong-alcoholic-drinks-and-spirits.jpg?s=612x612&w=0&k=20&c=nH5UFeng_BwbrXrnULOSNQxF2vCKEk8V42AKOST4shY="
+      "image": "https://media.istockphoto.com/id/177307185/photo/milk.webp?s=2048x2048&w=is&k=20&c=1HJ-CyLPRlZcRzLScjSp_0fxFSGEsxsl9k52apB1VdI="
     },
     {
       "id": "13",
       "name": "Apple",
       "price": 150,
       "category": "Fruits",
-      "stock": 35,
-      "image": "https://media.istockphoto.com/id/1371317396/photo/assortment-of-hard-strong-alcoholic-drinks-and-spirits.jpg?s=612x612&w=0&k=20&c=nH5UFeng_BwbrXrnULOSNQxF2vCKEk8V42AKOST4shY="
-    }  
-    
+      "stock": 34,
+      "image": "https://media.istockphoto.com/id/145837669/photo/fruits.webp?s=2048x2048&w=is&k=20&c=rO49pdaW0iwtBqNG5Z3jpqUX-BOKhoZUhNEDKZXUtYw="
+    }
   ],
   "orders": [
     {
@@ -177,6 +190,86 @@
       "total": 240,
       "payment": "online",
       "date": "2025-10-29T12:30:36.656Z"
+    },
+    {
+      "id": 4,
+      "userId": 4,
+      "items": [
+        {
+          "menuId": "1",
+          "quantity": 1,
+          "name": "Chapati",
+          "price": 25
+        },
+        {
+          "menuId": "4",
+          "quantity": 1,
+          "name": "Mandazi",
+          "price": 15
+        },
+        {
+          "menuId": "3",
+          "quantity": 1,
+          "name": "Ugali & Fish",
+          "price": 120
+        },
+        {
+          "menuId": "6",
+          "quantity": 1,
+          "name": "Tea",
+          "price": 10
+        },
+        {
+          "menuId": "5",
+          "quantity": 1,
+          "name": "Chicken Stew",
+          "price": 150
+        },
+        {
+          "menuId": "13",
+          "quantity": 1,
+          "name": "Apple",
+          "price": 150
+        }
+      ],
+      "status": "Pending",
+      "total": 470,
+      "payment": "cash",
+      "date": "2025-10-29T18:17:57.510Z"
+    },
+    {
+      "id": 5,
+      "userId": 5,
+      "items": [
+        {
+          "menuId": "6",
+          "quantity": 1,
+          "name": "Tea",
+          "price": 10
+        },
+        {
+          "menuId": "5",
+          "quantity": 1,
+          "name": "Chicken Stew",
+          "price": 150
+        },
+        {
+          "menuId": "8",
+          "quantity": 2,
+          "name": "Fries",
+          "price": 200
+        },
+        {
+          "menuId": "9",
+          "quantity": 1,
+          "name": "Pasta",
+          "price": 800
+        }
+      ],
+      "status": "Pending",
+      "total": 1360,
+      "payment": "online",
+      "date": "2025-10-29T18:28:29.154Z"
     }
   ],
   "payments": [
@@ -198,6 +291,20 @@
       "id": 3,
       "orderId": 3,
       "amount": 240,
+      "mode": "online",
+      "status": "confirmed"
+    },
+    {
+      "id": 4,
+      "orderId": 4,
+      "amount": 470,
+      "mode": "cash",
+      "status": "confirmed"
+    },
+    {
+      "id": 5,
+      "orderId": 5,
+      "amount": 1360,
       "mode": "online",
       "status": "confirmed"
     }
