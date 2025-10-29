@@ -1,4 +1,4 @@
-const API_BASE = 'https://json-server-vercel-pglc.vercel.app/';
+const API_BASE = 'https://json-server-vercel-pglc.vercel.app/menu';
 
 export const api = {
   get: async (endpoint) => {
