@@ -1,5 +1,5 @@
 // const API_BASE = 'http://localhost:3000';
-const API_BASE = 'https://json-server-vercel-three-gamma.vercel.app/users'`https://json-server-vercel-three-gamma.vercel.app/menu``https://json-server-vercel-three-gamma.vercel.app/orders``https://json-server-vercel-three-gamma.vercel.app/payments``https://json-server-vercel-three-gamma.vercel.app/reports`;
+const API_BASE = 'https://json-server-vercel-three-gamma.vercel.app';
 
 export const api = {
   get: async (endpoint) => {
